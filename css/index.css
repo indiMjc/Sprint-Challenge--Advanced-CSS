@@ -164,6 +164,9 @@ nav {
   background-color: lightgray;
   text-align: center;
   height: 10rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 nav .navHeader {
   font-size: 4rem;
@@ -188,6 +191,7 @@ footer {
 }
 .home .intro img {
   border-radius: 0.5rem;
+  margin-top: 15rem;
 }
 .home .intro h2 {
   padding: 15px;
