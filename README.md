@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+A responsive website would generally use one layout and changes it layout based on any screen size.  An adaptive website uses things like media queries to set break points for different layouts based on set screen sizes.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+A desktop first site would have its main layout styled in the desktop size.  Then to add more styling for different device sizes, we style with max-width in our media queries.  A mobile site is designed from the other direction, i.e. the mobile layout is the 'main' layout and we would use min-width in our media queries.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+The default font-size is 16px.  By setting global font-size to 62.5% we override the normal default.  62.5% of 16px is 10px.  Since rem takes it's measurement from the root parent (I think it's called the 'root parent,' maybe just 'root') 1rem would be 10px, 2rem would be 20px, 3 would be 30px, ect.  This just makes it easier for us to do the math quickly to determine how big we're setting our fonts.  By using rem units we make the text on our pages respond to zooming.  Without this, we would most likely have to hard code a font-size, meaning that if it was set to 16px, even if we zoomed in the font would still be 16px.  With rem units the font will scale up with zooming.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+A preprocessor allows is to write our code in a way that's easier to read and easier to work with.  When we use a preprocessor we use different syntax that keeps elements nested together in groups that are easier to understand.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I really like the different style sheets for the different containers.  Before when I was writing CSS ctrl+f was my best friend and I was constantly scrolling up and down, down and up.  With LESS it's much easier to just open up my nav sheet or footer sheet and get right into the section that I'm looking for.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
